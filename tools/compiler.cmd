@@ -1,0 +1,2 @@
+gcc -g main.c polynomes/operations.c polynomes/polySolver.c list/listFunctions.c healpers/atoi.c healpers/casting.c healpers/ft_split.c healpers/functions.c tree/treeFunctionsArray.c tree/treeFunctionsLinkedList.c -o equationsSolver 
+ equationsSolver.exe 

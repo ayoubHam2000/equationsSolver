@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+typedef struct Tree Tree;
+typedef struct IntList IntList;
+
+struct Tree{
+    int     info;
+    IntList children;
+};
+
+struct IntList{
+    Tree    *node;
+    IntList *next;
+};
+
+IntList *addNode(Tree *theTree, IntList *theList){
+    IntList *newElement;
+
+    newElement = (IntList *)malloc(sizeof(IntList));
+    newElement->node = theTree;
+    newElement->next = theList;
+    return newElement;
+}
+
+int main(){
+
+    Tree G = {'G', NULL};
+    Tree H = {'H', NULL};
+    Tree I = {'I', NULL};
+    Tree F = {'F', addNode()}
+
+
+    return 0;
+}
